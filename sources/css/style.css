@@ -1,0 +1,410 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap");
+
+:root {
+  --heading-size: 1.25rem;
+  --section-title: 3.25rem;
+  --subheading: 3.5rem;
+  --description: 1.5rem;
+  --social: 1.25rem;
+  --card: 1.1rem;
+}
+
+:root[data-theme="light"] {
+  --text: #191a19;
+  --background: #ddddc9;
+  --primary: #525544;
+  --secondary: #b8bba5;
+  --accent: #7e845c;
+  --card-color: #b4b4a0;
+}
+:root[data-theme="dark"] {
+  --text: #e6e7e6;
+  --background: #0d0d0b;
+  --primary: #b8bbab;
+  --secondary: #565943;
+  --accent: #9ea47c;
+  --card-color: #1e1e17;
+}
+
+/* ------------ GENERAL STYLING ------------ */
+
+.hidden-section {
+  display: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  transition: background-color 0.5s ease-in-out;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  background-color: var(--background);
+}
+
+.portfolio-container {
+  margin: 5%;
+  max-width: 100%;
+  border: 0px dashed gray;
+}
+
+/* ------------ HEADER STYLING ------------ */
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: var(--heading-size);
+  border: 0px dashed gray;
+}
+
+header h3 {
+  color: var(--text);
+  font-weight: 600;
+}
+
+header span {
+  color: var(--accent);
+}
+
+#title_logo {
+  gap: 0.5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#title_logo img {
+  width: auto;
+  height: 1em;
+  margin-right: 1px;
+}
+
+/* navigation */
+.nav-toggle-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1em;
+}
+
+nav {
+  display: flex;
+}
+
+.nav-toggle-container nav a {
+  margin-right: 30px;
+  text-decoration: none;
+  color: var(--text);
+  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+nav a:hover {
+  color: var(--accent);
+  transform: scale(1.05);
+}
+
+/* ------------ SECTION STYLING ------------ */
+
+#section_title {
+  margin-top: 1em;
+  color: var(--primary);
+  font-size: var(--section-title);
+  border: 0px dashed gray;
+}
+
+#section_content_container {
+  display: flex;
+  color: var(--text);
+}
+
+/* ------------ 'ABOUT ME' STYLING ------------ */
+
+#about_me_description {
+  width: 100%;
+  border: 0px dashed gray;
+}
+
+#about_me_description h1 {
+  margin-top: 0.75em;
+  margin-bottom: 0.5em;
+  font-weight: 600;
+  font-size: var(--subheading);
+  color: var(--accent);
+}
+#about_me_description h2 {
+  text-align: justify;
+  font-weight: 400;
+  line-height: 1.75;
+  margin-right: 3em;
+}
+
+#about_me_image {
+  width: 40%;
+}
+
+#about_me_image img {
+  border-radius: 1em;
+  max-width: 100%;
+  height: auto;
+  filter: saturate(0.5);
+}
+
+/* info capsules styling */
+.info-capsules {
+  margin-top: 3em;
+  display: flex;
+  gap: 2em;
+}
+
+.info-capsules span {
+  padding: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 10px;
+  color: var(--text);
+  font-size: var(--social);
+  background-color: var(--card-color);
+}
+
+.info-capsules span a {
+  color: var(--text);
+  text-decoration: none;
+}
+
+.info-capsules i {
+  margin-right: 10px;
+}
+
+
+/* ------------ 'INTERESTS' STYLING ------------ */
+
+#section_title p {
+  color: var(--text);
+  font-size: var(--description);
+}
+
+#card_container {
+  display: flex;
+}
+
+#card_container h3 {
+  font-weight: 500;
+  color: var(--primary);
+}
+
+.card-container-one,
+.card-container-two {
+  flex: 1;
+}
+
+.card-container-one {
+  margin-right: 1em;
+}
+.card-interest {
+  margin-top: 1em;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: var(--card);
+  background-color: var(--card-color);
+}
+
+.card-interest p {
+  margin-top: 7px;
+}
+
+.card-interest i {
+  margin: 7px;
+}
+
+/* ------------ 'GOALS' STYLING ------------ */
+.scrollable-container {
+  max-height: 14em; /* Adjust the max-height according to your design */
+  overflow-y: auto;
+}
+
+/* Add this if you want to add a bit of padding */
+.scrollable-container {
+  margin-top: 1.5em;
+  box-sizing: border-box;
+}
+
+#goals #section_title span {
+  color: var(--primary);
+}
+
+#goals #section_content_container {
+  display: flex;
+  flex-direction: column;
+  font-size: var(--description);
+}
+
+#goals #section_content_container h3 {
+  font-size: var(--description);
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: var(--accent);
+}
+
+#goals #section_content_container p {
+  text-align: justify;
+  line-height: 1.5;
+  margin-bottom: 1em;
+}
+
+#goals #section_content_container i {
+  margin-right: 15px;
+}
+
+#goals #section_content_container h4 {
+  font-size: var(--description);
+  font-weight: 500;
+  line-height: 1.5;
+  text-align: justify;
+  color: var(--primary);
+}
+
+/* ------------ 'JOURNALS' STYLING ------------ */
+
+#journals #section_content_container {
+  margin-top: 2em;
+}
+.grid {
+  display: flex;
+  gap: 2em;
+}
+.grid-item {
+  width: 100%; 
+  background-color: var(--secondary);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.grid-item:hover {
+  transform: translateY(-0.5%);
+}
+
+.card-img {
+  display: block;
+  width: 100%;
+  height: 7em;
+  object-fit: cover;
+}
+.card-content {
+  padding: 1em 1em;
+}
+.card-header {
+  font-size: 1.3em;
+  font-weight: 600;
+  color: var(--primary);
+  margin-bottom: 0.5em;
+}
+.card-text {
+  font-size: 1em;
+  line-height: 1.5;
+  text-align: justify;
+  color: var(--text);
+  margin-bottom: 1em;
+}
+.card-btn {
+  display: block;
+  width: 100%;
+  padding: 0.5em;
+  font-size: 1.1em;
+  text-align: center;
+  color: var(--secondary);
+  background-color: var(--primary);
+  border: none;
+  border-radius: 0.5rem;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+.card-btn span {
+  margin-left: 0.25em;
+  transition: 0.3s ease-in-out;
+}
+.card-btn:hover, .card__btn:active {
+  background-color: var(--accent);
+}
+.card-btn:hover span, .card__btn:active span {
+  margin-left: 1em;
+}
+
+
+/* ------------ THEME TOGGLE STYLING ------------ */
+#toggle_theme {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+.label {
+  background-color: var(--secondary);
+  border-radius: 50px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  position: relative;
+  height: 24px;
+  width: 57px;
+  transform: scale(1);
+}
+
+.label .ball {
+  background-color: var(--accent);
+  border-radius: 50%;
+  position: absolute;
+  top: 3.5px;
+  left: 4px;
+  height: 0.825em;
+  width: 0.825em;
+  transform: translateX(1px);
+  transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .label .ball {
+  transform: translateX(32px);
+}
+
+.fa-moon,
+.fa-sun {
+  margin-top: 1px;
+  font-size: 0.7em;
+}
+
+.fa-moon {
+  margin-left: 2px;
+  color: #f1c40f;
+}
+
+.fa-sun {
+  margin-right: 1px;
+  color: var(--primary);
+}
+
+/* Hide scrollbar */
+*::-webkit-scrollbar {
+  display: none;
+}
+
+/* For Firefox */
+body {
+  scrollbar-width: none;
+}
