@@ -183,7 +183,6 @@ nav a:hover {
   margin-right: 10px;
 }
 
-
 /* ------------ 'INTERESTS' STYLING ------------ */
 
 #section_title p {
@@ -282,7 +281,7 @@ nav a:hover {
   gap: 2em;
 }
 .grid-item {
-  width: 100%; 
+  width: 100%;
   background-color: var(--secondary);
   border-radius: 0.5rem;
   overflow: hidden;
@@ -299,15 +298,22 @@ nav a:hover {
   height: 7em;
   object-fit: cover;
 }
+
 .card-content {
   padding: 1em 1em;
 }
+
+.card-content a {
+  text-decoration: none;
+}
+
 .card-header {
   font-size: 1.3em;
   font-weight: 600;
   color: var(--primary);
   margin-bottom: 0.5em;
 }
+
 .card-text {
   font-size: 1em;
   line-height: 1.5;
@@ -315,6 +321,7 @@ nav a:hover {
   color: var(--text);
   margin-bottom: 1em;
 }
+
 .card-btn {
   display: block;
   width: 100%;
@@ -328,17 +335,21 @@ nav a:hover {
   transition: 0.3s ease-in-out;
   cursor: pointer;
 }
+
 .card-btn span {
   margin-left: 0.25em;
   transition: 0.3s ease-in-out;
 }
-.card-btn:hover, .card__btn:active {
+
+.card-btn:hover,
+.card__btn:active {
   background-color: var(--accent);
 }
-.card-btn:hover span, .card__btn:active span {
+
+.card-btn:hover span,
+.card__btn:active span {
   margin-left: 1em;
 }
-
 
 /* ------------ THEME TOGGLE STYLING ------------ */
 #toggle_theme {
