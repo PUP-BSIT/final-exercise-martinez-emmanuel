@@ -7,14 +7,41 @@
     <meta name="description" content="">
     <link rel="stylesheet" type="text/css" href="./sources/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
-    <link rel="icon" type="image/x-icon" 
-    href="./sources/images/emmanuel_logo.png">
+    <link rel="icon" type="image/x-icon" href="./sources/images/emmanuel_logo.png">
     <title>Emmanuel Martinez</title>
 </head>
 
 <body>
     <!--Portfolio Container-->
     <div class="portfolio-container">
+
+        <!--Container 1: Header-->
+        <header>
+            <div class="webpage-title">
+                <div id="title_logo">
+                    <img src="./sources/images/emmanuel_logo.png">
+                    <h3>Emmanuel Martinez <span>Portfolio</span></h3>
+                </div>
+            </div>
+
+            <div class="nav-toggle-container">
+                <nav>
+                    <a href="#about_me">ABOUT</a>
+                    <a href="#interests">INTERESTS</a>
+                    <a href="#goals">GOALS</a>
+                    <a href="#works">WORKS</a>
+                    <a href="#journals">JOURNALS</a>
+                </nav>
+                <div id="toggle_theme">
+                    <input type="checkbox" class="checkbox" id="theme_mode" />
+                    <label class="label" for="theme_mode" onclick="toggleTheme()">
+                        <i class="fas fa-moon"></i>
+                        <i class="fas fa-sun"></i>
+                        <div class="ball"></div>
+                    </label>
+                </div>
+            </div>
+        </header>
 
     </div>
     <script src="./sources/scripts/script.js"></script>
