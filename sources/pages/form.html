@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../css/form.css" />
+  <title>Form with List</title>
+</head>
+
+<body>
+  <h1>Form List</h1>
+  <form id="input_form">
+    <label for="fullName">Full Name</label>
+    <input type="text" id="full_name" pattern="[a-zA-Z0-9]+" required minlength="1" />
+
+    <label for="form_id">ID</label>
+    <input type="text" id="form_id" pattern="[0-9]+" required minlength="1" />
+    <input type="button" value="Add" onclick="addItem()" />
+  </form>
+  <ul id="item_list"></ul>
+  <script src="../scripts/script.js"></script>
+  <script src="../scripts/form.js"></script>
+</body>
+</html>
