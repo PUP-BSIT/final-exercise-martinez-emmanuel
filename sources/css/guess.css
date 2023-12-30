@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap");
+
+:root[data-theme="light"] {
+  --text: #191a19;
+  --background: #ddddc9;
+  --primary: #525544;
+  --secondary: #b8bba5;
+  --accent: #7e845c;
+  --card-color: #b4b4a0;
+}
+:root[data-theme="dark"] {
+  --text: #e6e7e6;
+  --background: #0d0d0b;
+  --primary: #b8bbab;
+  --secondary: #565943;
+  --accent: #9ea47c;
+  --card-color: #1e1e17;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--background);
+}
+
+h1 {
+  font-size: 4em;
+  background-image: linear-gradient(to right, var(--accent), var(--secondary));
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+h2 {
+  font-weight: 500;
+  color: var(--primary);
+}
+
+.wrapper {
+  padding: 30px 40px;
+  text-align: center;
+}
+
+.wrapper p {
+  font-size: 1.5em;
+  color: var(--accent);
+}
+.wrapper .input-field {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2em;
+  margin: 25px 0;
+}
+.input-field input,
+.input-field button {
+  height: 50px;
+  width: 100%;
+  outline: none;
+  padding: 0 20px;
+  border-radius: 8px;
+  font-size: 18px;
+}
+.input-field input {
+  text-align: center;
+  color: var(--background);
+  background-color: var(--primary);
+}
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+  display: none;
+}
+.input-field input:disabled {
+  cursor: not-allowed;
+}
+.input-field button {
+  border: none;
+  background: var(--secondary);
+  color: var(--text);
+  cursor: pointer;
+  transition: 0.3s;
+}
+.input-field button:active {
+  transform: scale(0.95);
+}
+
+.guess {
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+.chances {
+  margin-top: 10px;
+}
+
+.guess.low {
+  color: #004ed4;
+}
+
+.guess.high {
+  color: goldenrod;
+}
+
+.guess.congratulations {
+  font-weight: 600;
+  color: green;
+}
+
+.guess.invalid {
+  font-weight: 600;
+  color: #de0611;
+}
+
+.guess.lost {
+  font-weight: 600;
+  color: #de0611;
+}
