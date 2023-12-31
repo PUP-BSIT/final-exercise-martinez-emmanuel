@@ -6,10 +6,15 @@ Welcome to my official portfolio website— a showcase of creativity, innovation
 For the final exercise on web development, I've made a visual overhaul and content changes to my website portfolio. Here are the highlights of the latest changes in this update:
 
  - **🎨** A revamped overall **dynamic color scheme**, now also available in Light and Dark mode.
+
  - **🔄** **Dynamic content loading:** Say goodbye to tedious scrolling! Main sections are now dynamically loaded using JavaScript. Navigate effortlessly through the site by clicking directly on the navigation bar.
+
  - **🎲** **Improved *Interests* section:** Each item are now arranged in a grid, allowing for a better content viewing.
+
  - **🎯** **Revised *Goals* section:** Dive into a more comprehensive list of my goals, reflecting my journey and aspirations based on my journey this year.
+
  - **🛠️** **Revised *Works* section:** For the final exercise, I've compiled all my best works in web development this semester, including some simple personal projects.
+ 
  -  **📖** **NEW: *Journals* section:** Explore my thoughts and reflections in the _Journals_ section. This space encapsulates my proudest work yet, where I've documented my questions and musings that linger all the time.
 
 ## Visit My Website
