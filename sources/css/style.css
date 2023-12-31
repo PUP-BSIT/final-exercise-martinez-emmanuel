@@ -3,10 +3,11 @@
 :root {
   --heading-size: 1.25rem;
   --section-title: 3.25rem;
-  --subheading: 3.5rem;
+  --subheading: 3.25rem;
   --description: 1.5rem;
   --social: 1.25rem;
   --card: 1.1rem;
+  --about: 1.5em;
 }
 
 :root[data-theme="light"] {
@@ -139,6 +140,7 @@ nav a:hover {
   color: var(--accent);
 }
 #about_me_description h2 {
+  font-size: var(--about);
   text-align: justify;
   font-weight: 400;
   line-height: 1.75;
