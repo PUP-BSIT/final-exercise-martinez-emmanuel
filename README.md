@@ -13,7 +13,7 @@ For the final exercise on web development, I've made a visual overhaul and conte
  -  **📖** **NEW: *Journals* section:** Explore my thoughts and reflections in the _Journals_ section. This space encapsulates my proudest work yet, where I've documented my questions and musings that linger all the time.
 
 ## Visit My Website
-💻 To view my official web portfolio, visit 
+💻 To view my official web portfolio, visit [emmanuel-martinez.netlify.app](https://emmanuel-martinez.netlify.app/)
 
 This website is made using:
 
